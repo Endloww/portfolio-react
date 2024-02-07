@@ -1,0 +1,208 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+.animate-character {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #6525a0 0%,
+            #bc3ee2 29%,
+            rgb(119, 55, 138) 100%,
+            rgb(176, 59, 230) 67%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.blanchet-transition {
+    // Votre animation spécifique pour le mot "Blanchet"
+    animation: blanchet-animation 1s ease-in-out;
+}
+
+.aurelien-transition {
+    // Votre animation spécifique pour le mot "Aurélien"
+    animation: aurelien-animation 1s ease-in-out;
+}
+
+// Ajoutez vos animations spécifiques ici
+
+
+.rotate-letters .rotate-letter {
+    display: inline-block;
+    transform-origin: center center;
+    animation: rotate-letter 0.5s ease-in-out;
+}
+
+@keyframes rotate-letter {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* box-intro
+==================================================*/
+
+.box-intro {
+    text-align: center;
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+
+.box-intro .image-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.box-intro .table-row {
+    display: table-row;
+}
+
+.box-intro .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.box-intro em {
+    font-style: normal;
+    text-transform: uppercase
+}
+
+b i:last-child {
+    color: #8647a3;
+}
+
+.box-intro h5 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #999;
+    line-height: 1.7
+}
+
+/* Logo Home
+==================================================*/
+
+.tete {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.tete:hover {
+    transform: scale(1.1);
+}
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    display: block;
+    text-align: center;
+    font-style: 20px;
+    z-index: 0;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 13px;
+    height: 13px;
+    border-bottom: 2px solid #8647a3;
+    border-right: 2px solid #8647a3;
+    animation: fade_move_down 2s cubic-bezier(0.19, 0.2, 0.22, 1) infinite;
+    transform-origin: center center;
+    /* Ajuste le point autour duquel l'élément va pivoter */
+    transform: rotate(45deg);
+}
+
+@keyframes fade_move_down {
+    0% {
+        transform: translateY(0) rotate(45deg);
+        ;
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(50px) rotate(45deg);
+        ;
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes intro {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes finger {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}
+
+@keyframes finger {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}
+
+.cd-headline {
+    font-size: 130px;
+    color: #303030;
+    text-transform: uppercase;
+    margin: 20px;
+    text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+}
