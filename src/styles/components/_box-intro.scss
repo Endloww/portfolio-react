@@ -24,6 +24,7 @@ body {
     animation: textclip 2s linear infinite;
     display: inline-block;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .blanchet-transition {
@@ -102,7 +103,7 @@ b i:last-child {
     max-width: 20%;
     height: auto;
     border-radius: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
     transition: transform 0.5s ease-in-out;
@@ -114,6 +115,7 @@ b i:last-child {
 }
 
 .scroll {
+    padding: 10px;
     position: absolute;
     left: 50%;
     bottom: 100px;
@@ -205,4 +207,5 @@ b i:last-child {
     text-transform: uppercase;
     margin: 20px;
     text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
 }

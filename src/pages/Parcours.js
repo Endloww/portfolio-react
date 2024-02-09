@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from '../components/Navbar';
 
-const Contact = () => {
+const Parcours = () => {
     return (
         <div>
+            parcours
             <Navigation />
-            contact
         </div>
     );
 };
 
-export default Contact;
+export default Parcours;

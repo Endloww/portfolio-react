@@ -1,0 +1,91 @@
+.navbrand {
+    width: 10%;
+    border-radius: 10%;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.navBg {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.text-at-bottom {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+.text-at-bottom h5 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 20px;
+    color: #000;
+    font-size: 40px;
+    margin-left: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+
+.social-icons {
+
+    .linkedin:hover {
+        color: #007bff;
+    }
+
+    .instagram:hover {
+        color: rgb(221, 59, 145);
+    }
+
+    .whatsapp:hover {
+        color: rgb(51, 197, 51);
+    }
+
+    .github:hover {
+        color: rgb(59, 59, 59);
+    }
+}
+
+.apropos h2 {
+    font-size: 25px;
+    margin-top: 25px;
+    color: #404040;
+    transition: color 0.3s ease;
+}
+
+.apropos h2:hover {
+    color: rgb(119, 55, 138);
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #303030;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.nav-link.active h2 {
+    color: rgb(119, 55, 138);
+}
+
+.nav-link {
+    display: flex;
+    align-items: baseline;
+}
+
+.nav-icon {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.nav-link.active .nav-icon {
+    color: rgb(119, 55, 138);
+}
