@@ -1,11 +1,14 @@
-import React from 'react';
+import React from 'react'
 import Navigation from '../components/Navbar';
+import Curriculum from '../components/CV';
+
 
 const Parcours = () => {
     return (
         <div>
-            parcours
             <Navigation />
+            <br /><br /><br /><br /><br />
+            <Curriculum />
         </div>
     );
 };

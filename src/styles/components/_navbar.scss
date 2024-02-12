@@ -5,7 +5,7 @@
 }
 
 .navBg {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #F5F5F5;
 }
 
 .text-at-bottom {
@@ -15,8 +15,11 @@
 }
 
 .text-at-bottom h5 {
-    font-size: 23px;
+    font-size: 20px;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #303030;
 }
 
 .social-icons {
@@ -37,18 +40,22 @@
 
     .linkedin:hover {
         color: #007bff;
+        filter: drop-shadow(2px 2px 10px);
     }
 
     .instagram:hover {
         color: rgb(221, 59, 145);
+        filter: drop-shadow(2px 2px 10px);
     }
 
     .whatsapp:hover {
         color: rgb(51, 197, 51);
+        filter: drop-shadow(2px 2px 10px);
     }
 
     .github:hover {
         color: rgb(59, 59, 59);
+        filter: drop-shadow(2px 2px 10px);
     }
 }
 
@@ -57,23 +64,29 @@
     margin-top: 25px;
     color: #404040;
     transition: color 0.3s ease;
+    transition: filter 0.2s ease;
+
 }
 
-.apropos h2:hover {
-    color: rgb(119, 55, 138);
-}
+
 
 h2 {
     font-size: 40px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 600;
     color: #303030;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    filter: none;
 }
 
 
 .nav-link.active h2 {
     color: rgb(119, 55, 138);
+    filter: drop-shadow(2px 2px 6px);
+}
+
+.nav-link:hover h2 {
+    color: rgb(119, 55, 138);
+    filter: drop-shadow(2px 2px 6px);
 }
 
 .nav-link {
@@ -84,8 +97,65 @@ h2 {
 .nav-icon {
     margin-right: 20px;
     font-size: 25px;
+    color: #303030;
+    filter: drop-shadow(2px 2px 6px);
 }
 
 .nav-link.active .nav-icon {
     color: rgb(119, 55, 138);
+}
+
+.nav-link:hover .nav-icon {
+    color: rgb(119, 55, 138);
+
+}
+
+.custom-toggler {
+    color: #303030;
+    border: #303030 2px solid;
+}
+
+body {
+    background-color: #F5F5F5;
+    --sb-track-color: #F5F5F5;
+    --sb-thumb-color: #64337D;
+    --sb-size: 12px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 15px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+.EIrz6a_hero-body {
+    background-color: rgb(map.get($purple, "800"), 0.8);
+    border-radius: 10px;
+}
+
+.SPgITW_sectionIcon {
+    background-color: map.get($purple, "800");
+}
+
+.EIrz6a_hero.EIrz6a_is-primary {
+    background-color: white;
+}
+
+a {
+    color: map.get($purple, "300");
 }

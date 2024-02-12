@@ -3,8 +3,9 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faHome, faTasks, faTools, faUser, faEnvelope, faBars } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
-import { faHome, faTasks, faTools, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Navigation = () => {
@@ -21,8 +22,10 @@ const Navigation = () => {
                 {[false].map((expand) => (
                     <Navbar key={expand} expand={expand} className=" mb-3 fixed-top navBg">
                         <Container fluid>
-                            <Navbar.Brand><img className="navbrand" src="./AUBL.png" alt="Description de l'image" /></Navbar.Brand>
-                            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                            <Navbar.Brand><a href='/'><img className="navbrand" src="./AUBL.png" alt="Description de l'image" /></a></Navbar.Brand>
+                            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="custom-toggler">
+                                <FontAwesomeIcon icon={faBars} />
+                            </Navbar.Toggle>
                             <Navbar.Offcanvas
                                 id={`offcanvasNavbar-expand-${expand}`}
                                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -41,19 +44,6 @@ const Navigation = () => {
                                                 <h2>{text}</h2>
                                             </NavLink>
                                         ))}
-                                        <NavDropdown
-                                            title="Dropdown"
-                                            id={`offcanvasNavbarDropdown-expand-${expand}`}
-                                        >
-                                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                                            <NavDropdown.Item href="#action4">
-                                                Another action
-                                            </NavDropdown.Item>
-                                            <NavDropdown.Divider />
-                                            <NavDropdown.Item href="#action5">
-                                                Something else here
-                                            </NavDropdown.Item>
-                                        </NavDropdown>
                                     </Nav>
                                     <div className="text-at-bottom">
                                         <h5>Suivez-moi sur mes réseaux !</h5>

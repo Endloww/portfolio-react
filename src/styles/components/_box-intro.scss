@@ -3,8 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Ubuntu', sans-serif;
-
-
+    background-color: #F5F5F5 !important;
 }
 
 .animate-character {
@@ -28,17 +27,14 @@ body {
 }
 
 .blanchet-transition {
-    // Votre animation spécifique pour le mot "Blanchet"
+    // animation spécifique pour le mot "Blanchet"
     animation: blanchet-animation 1s ease-in-out;
 }
 
 .aurelien-transition {
-    // Votre animation spécifique pour le mot "Aurélien"
+    // animation spécifique pour le mot "Aurélien"
     animation: aurelien-animation 1s ease-in-out;
 }
-
-// Ajoutez vos animations spécifiques ici
-
 
 .rotate-letters .rotate-letter {
     display: inline-block;
@@ -106,12 +102,12 @@ b i:last-child {
     margin-top: 5%;
     margin-bottom: 5%;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     transform-style: preserve-3d;
 }
 
 .tete:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .scroll {

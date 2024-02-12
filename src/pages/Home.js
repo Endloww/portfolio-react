@@ -27,7 +27,7 @@ const Home = () => {
             <Navigation />
             <div className='box-intro'>
                 <section className="cd-intro">
-                    <img className="tete logo-ls" src="./AUBL.png" alt="Description de l'image" />
+                    <a href="/parcours"><img className="tete logo-ls" src="./AUBL.png" alt="Description de l'image" /></a>
 
                     <h1 className={`cd-headline rotate-1 ${currentWord === "Blanchet" ? "blanchet-transition" : "aurelien-transition"}`}>
                         {currentWord.split("").map((letter, index) => (
